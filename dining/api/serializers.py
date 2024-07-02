@@ -15,3 +15,8 @@ class PlaceSerializer(serializers.ModelSerializer):
     class Meta:
         model = Place
         fields = '__all__'
+        
+class NameSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Place
+        fields = 'name'

@@ -68,7 +68,7 @@ def create(request):
         return Response(data)
     return Response("Invalid Data")
 
-@api_view(['GET'])
+@api_view(['POST'])
 def search(request):
     users = User.objects.all()
     serializer = PlaceSerializer(users, many=True)

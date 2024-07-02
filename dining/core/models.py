@@ -16,7 +16,7 @@ class Place(models.Model):
     phone_no = models.IntegerField()
     website = models.URLField(max_length=200)
     open_time = models.DateTimeField(null=False)
-    close_time = models.DateField(null=False)
+    close_time = models.DateTimeField(null=False)
     
     def __str__(self):
         return self.name
